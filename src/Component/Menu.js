@@ -6,9 +6,9 @@ class Menu extends Component {
     render() {
     return (
       <div className='container-fluid'>
-        <h5>ภาขนะ</h5>
-        <h5>สารเคมี</h5>
-        <h5>สารสิ้นเปลือง</h5>
+        <button className="btn btn-block btn-success">ภาขนะ</button>
+        <button className="btn btn-block btn-secondary">สารเคมี </button>
+        <button className="btn btn-block btn-secondary">สารสิ้นเปลือง</button>
       </div>
     )
   }
