@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
   render() {
@@ -7,23 +8,28 @@ class Header extends Component {
       <div className="conrainer-fluid banner">
 
         <div className="row">
-          <div className="col-md-10 text-left">
+          <div className="col-md-8 text-left">
             <div className="pic">
-              <img src="/pic/mfulogo.png" height="90" />
+              <img src="/pic/mfulogo.png" height="60" />
             </div>
             <div className="text">
-              <h4>Chemical Storage</h4>
+              <h4><Link to="/">    Chemical Storage</Link></h4>
             </div>
           </div>
 
-          <div className="col-md-1 text-right">
-            <button className="btn btn-block btn-secondary"> ลงชื่อเข้าใช้ </button>
-            <button className="btn btn-block btn-secondary"> สมัครบริการ </button>
-
+          <div className="col-md-4 text-right">
+            <div className="textban">
+              <Link to="/login">ลงชื่อเข้าใช้</Link> | 
+              <Link to="./Regis"> สมัครบริการ</Link> |
+               ตะกร้า |
+               ผู้ใช้n
+            </div>
+            
           </div>
         </div>
-        <hr />
+        <hr className="hr" />
       </div>
+
 
     );
   }

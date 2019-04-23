@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 
-class Login extends Component {
+class Regis extends Component {
     render() {
         return (
-            <div className="conrainer-fluid banner">
+            <div> <Header /> 
+            <div className="conrainer-fluid">
                 <form action="/action_page.php">
                     <div className="container">
                         <h1>สมัครใช้งาน</h1>
@@ -33,7 +35,8 @@ class Login extends Component {
                     </div>
                 </form>
             </div>
+            </div>
         );
     }
 }
-export default Login;
+export default Regis;
